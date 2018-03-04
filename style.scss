@@ -1,0 +1,47 @@
+/*
+Author: Joseph Sobero
+Date: March 3, 2018
+
+GrC 338 Final Lab Project
+ */
+
+
+/* VARIABLES */
+
+// color
+$black: #000;
+$white: #fff;
+$gray: #aaa;
+$red: #D81200;
+$blue: #022B3A;
+// opacity
+$textbgo: 0.8;
+// text
+$fontfam: sans-serif;
+$fontsize: 1.1em;
+$fontsizeh: 3.2em;
+
+
+
+/* RESET */
+
+* {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+/* STYLES */
+
+
+// main container
+#container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
