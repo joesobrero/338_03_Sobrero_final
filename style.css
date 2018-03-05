@@ -20,7 +20,8 @@ nav {
   left: 0;
   top: 0;
   height: 100vh;
-  width: 275px; }
+  width: 275px;
+  background-color: rgba(255, 255, 255, 0.8); }
   nav ul {
     position: absolute;
     top: 50%;
@@ -35,28 +36,27 @@ nav {
       font-weight: 400;
       letter-spacing: 2px;
       margin: 25px 0; }
-      nav ul li a {
-        color: #fff; }
 
 #container {
   z-index: 0;
   position: absolute;
-  left: 0;
+  left: 275px;
+  right: 0;
   top: 0;
-  width: 100%;
   height: 100vh;
   max-width: 2000px;
   max-height: 1350px;
   overflow: hidden; }
-  #container div {
-    z-index: 1;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.6; }
+
+#dimmer {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6; }
 
 #bg {
   z-index: 0;
@@ -65,5 +65,25 @@ nav {
   transform: translateY(-50%);
   width: 100%;
   min-height: 100%; }
+
+#logo-box {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 100px; }
+
+#title-logo, #title-logotype {
+  position: absolute;
+  top: 0;
+  height: 100%; }
+
+#title-logo {
+  left: 0; }
+
+#title-logotype {
+  right: 0; }
 
 /*# sourceMappingURL=style.css.map */
