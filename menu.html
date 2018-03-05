@@ -3,6 +3,10 @@
 <head>
     <title>Flour House - Menu</title>
 
+    <!-- META DATA -->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -17,20 +21,24 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
+
+<!-- DIV FOR PAGE HEIGHT TO FIX FOOTER POSITION -->
+<div id="body"></div>
+
 <!-- NAV BAR -->
 <nav>
     <ul>
         <li><a href="story.html">story</a></li>
         <li><a href="events.html">events</a></li>
         <li><a href="location.html">location</a></li>
-        <li><a href="menu.html">menu</a></li>
+        <li>menu</li>
     </ul>
 </nav>
 
 <!-- CONTENT CONTAINER -->
-<div id="container">
-    <div id="dimmer"></div>
-    <img id="bg" src="images/flour.jpg" alt="home made pasta ingredients on table">
+<div class="container">
+    <div class="dimmer"></div>
+    <img class="bg" src="images/flour.jpg" alt="home made pasta ingredients on table">
 </div>
 
 <!-- FOOTER -->
@@ -43,5 +51,6 @@
     <img id="gf" src="images/gf.png" alt="gluten free options available">
     <img id="v" src="images/v.png" alt="gluten free options available">
 </footer>
+
 </body>
 </html>

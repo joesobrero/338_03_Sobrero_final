@@ -60,11 +60,13 @@ nav {
     li {
       font-family: $fontfam;
       font-size: $fontsizem;
-      font-weight: $reg;
+      font-weight: $bold;
       letter-spacing: 2px;
       margin: 25px 0;
+      color: $red;
     }
     a {
+      font-weight: $reg;
       &:visited {
         color: $gray;
       }
@@ -79,8 +81,18 @@ nav {
 }
 
 // MANIN CONTENT
+// for page height to fix footer positioning
+#body {
+  position: relative;
+  height: 100vh;
+}
+#body2 {
+  position: relative;
+  height: 200vh;
+}
+
 // container no overflow
-#container {
+.container {
   z-index: 0;
   position: absolute;
   left: 275px;
@@ -92,8 +104,12 @@ nav {
   max-height: 1350px;
   overflow: hidden;
 }
+#container2 {
+  margin-top: 100vh;
+  margin-bottom: 10vh;
+}
 // background image dimmer
-#dimmer {
+.dimmer {
   z-index: 1;
   position: absolute;
   left: 0;
@@ -104,7 +120,7 @@ nav {
   opacity: 0.65;
 }
 // background image
-#bg {
+.bg {
   z-index: 0;
   position: absolute;
   top: 50%;
@@ -139,7 +155,7 @@ nav {
 // container
 footer {
   z-index: 10;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
