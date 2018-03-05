@@ -21,6 +21,8 @@ $fontfam: 'Open Sans', 'Lato', sans-serif;
 $fontsize: 1.1em;
 $fontsizeh: 3.2em;
 $fontsizem: 1.8em;
+$reg: 400;
+$bold: 700;
 
 
 
@@ -31,6 +33,7 @@ $fontsizem: 1.8em;
   margin: 0;
   padding: 0;
   color: #000;
+  text-decoration: none;
 }
 
 /* STYLES */
@@ -44,7 +47,6 @@ nav {
   top: 0;
   height: 100vh;
   width: 275px;
-  background-color: $white;
   ul {
     position: absolute;
     top: 50%;
@@ -56,13 +58,19 @@ nav {
     li {
       font-family: $fontfam;
       font-size: $fontsizem;
+      font-weight: $reg;
+      letter-spacing: 2px;
       margin: 25px 0;
+      a {
+        color: $white;
+      }
     }
   }
 }
 
 // main container
 #container {
+  z-index: 0;
   position: absolute;
   left: 0;
   top: 0;
@@ -71,8 +79,19 @@ nav {
   max-width: 2000px;
   max-height: 1350px;
   overflow: hidden;
+  div {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 0.6;
+  }
 }
 #bg {
+  z-index: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
