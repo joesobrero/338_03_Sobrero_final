@@ -1,8 +1,54 @@
+/*
+Author: Joseph Sobero
+Date: March 3, 2018
+
+GrC 338 Final Lab Project
+ */
+/* VARIABLES */
+/* RESET */
+* {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  color: #000; }
+
+/* STYLES */
+nav {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 275px;
+  background-color: #fff; }
+  nav ul {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 280px;
+    list-style-type: none; }
+    nav ul li {
+      font-family: "Open Sans", "Lato", sans-serif;
+      font-size: 1.8em;
+      margin: 25px 0; }
+
 #container {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-}
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  max-width: 2000px;
+  max-height: 1350px;
+  overflow: hidden; }
+
+#bg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  min-height: 100%; }
+
+/*# sourceMappingURL=style.css.map */

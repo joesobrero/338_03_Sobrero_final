@@ -17,9 +17,10 @@ $blue: #022B3A;
 // opacity
 $textbgo: 0.8;
 // text
-$fontfam: sans-serif;
+$fontfam: 'Open Sans', 'Lato', sans-serif;
 $fontsize: 1.1em;
 $fontsizeh: 3.2em;
+$fontsizem: 1.8em;
 
 
 
@@ -35,6 +36,31 @@ $fontsizeh: 3.2em;
 /* STYLES */
 
 
+//nav
+nav {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 275px;
+  background-color: $white;
+  ul {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 280px;
+    list-style-type: none;
+    li {
+      font-family: $fontfam;
+      font-size: $fontsizem;
+      margin: 25px 0;
+    }
+  }
+}
+
 // main container
 #container {
   position: absolute;
@@ -42,6 +68,15 @@ $fontsizeh: 3.2em;
   top: 0;
   width: 100%;
   height: 100vh;
+  max-width: 2000px;
+  max-height: 1350px;
   overflow: hidden;
+}
+#bg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  min-height: 100%;
 }
 
