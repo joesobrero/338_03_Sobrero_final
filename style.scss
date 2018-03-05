@@ -64,6 +64,17 @@ nav {
       letter-spacing: 2px;
       margin: 25px 0;
     }
+    a {
+      &:visited {
+        color: $gray;
+      }
+      &:hover {
+        color: $red;
+      }
+      &:active {
+        color: $gray;
+      }
+    }
   }
 }
 
@@ -73,9 +84,10 @@ nav {
   z-index: 0;
   position: absolute;
   left: 275px;
-  right: 0;
-  top: 0;
-  height: 100vh;
+  right: 275px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80vh;
   max-width: 2000px;
   max-height: 1350px;
   overflow: hidden;
@@ -121,6 +133,7 @@ nav {
 #title-logotype {
   right: 0;
 }
+
 
 // FOOTER
 // container

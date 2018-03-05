@@ -36,14 +36,21 @@ nav {
       font-weight: 400;
       letter-spacing: 2px;
       margin: 25px 0; }
+    nav ul a:visited {
+      color: #aaa; }
+    nav ul a:hover {
+      color: #D81200; }
+    nav ul a:active {
+      color: #aaa; }
 
 #container {
   z-index: 0;
   position: absolute;
   left: 275px;
-  right: 0;
-  top: 0;
-  height: 100vh;
+  right: 275px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80vh;
   max-width: 2000px;
   max-height: 1350px;
   overflow: hidden; }
