@@ -36,9 +36,13 @@ $bold: 700;
   color: #000;
   text-decoration: none;
 }
+html, body {
+  overflow: hidden;
+  width: 100%;
+}
+
 
 /* STYLES */
-
 
 // NAV BAR
 nav {
@@ -60,18 +64,20 @@ nav {
     li {
       font-family: $fontfam;
       font-size: $fontsizem;
-      font-weight: $bold;
+      font-weight: $reg;
       letter-spacing: 2px;
       margin: 25px 0;
-      color: $red;
+      color: $gray;
     }
     a {
       font-weight: $reg;
+      /*
       &:visited {
         color: $gray;
       }
+      */
       &:hover {
-        color: $red;
+        opacity: 0.5;
       }
       &:active {
         color: $gray;
@@ -82,13 +88,21 @@ nav {
 
 // MANIN CONTENT
 // for page height to fix footer positioning
-#body {
+
+#story-footer-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200vh;
+  width: 100%;
+  overflow: hidden;
+}
+#story-scroll {
   position: relative;
   height: 100vh;
-}
-#body2 {
-  position: relative;
-  height: 200vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 // container no overflow
@@ -152,15 +166,17 @@ nav {
 
 
 // FOOTER
-// container
+
+// footer container
 footer {
   z-index: 10;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 30px;
   background-color: rgba(0, 0, 0, 0.85);
+  // footer text items
   ul {
     position: absolute;
     left: 0;
@@ -179,6 +195,7 @@ footer {
       display: inline-block;
     }
   }
+  // footer images
   img {
     position: absolute;
     right: 15px;

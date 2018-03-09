@@ -13,6 +13,10 @@ GrC 338 Final Lab Project
   color: #000;
   text-decoration: none; }
 
+html, body {
+  overflow: hidden;
+  width: 100%; }
+
 /* STYLES */
 nav {
   z-index: 10;
@@ -33,26 +37,36 @@ nav {
     nav ul li {
       font-family: "Open Sans", "Lato", sans-serif;
       font-size: 1.8em;
-      font-weight: 700;
+      font-weight: 400;
       letter-spacing: 2px;
       margin: 25px 0;
-      color: #D81200; }
+      color: #aaa; }
     nav ul a {
-      font-weight: 400; }
-      nav ul a:visited {
-        color: #aaa; }
+      font-weight: 400;
+      /*
+      &:visited {
+        color: $gray;
+      }
+      */ }
       nav ul a:hover {
-        color: #D81200; }
+        opacity: 0.5; }
       nav ul a:active {
         color: #aaa; }
 
-#body {
-  position: relative;
-  height: 100vh; }
+#story-footer-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200vh;
+  width: 100%;
+  overflow: hidden; }
 
-#body2 {
+#story-scroll {
   position: relative;
-  height: 200vh; }
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 .container {
   z-index: 0;
@@ -110,7 +124,7 @@ nav {
 
 footer {
   z-index: 10;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;

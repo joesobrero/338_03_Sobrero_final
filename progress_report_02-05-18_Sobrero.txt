@@ -1,0 +1,126 @@
+commit cee8086731d6f81f691ab983ffa52141e4fd6fc2
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Mar 5 14:49:16 2018 -0800
+
+    add div to fix footer positioning, add second container for story page
+
+commit 635d0ce7333a4efa7ab80809e3e57f7f15f72a58
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Mar 5 14:14:30 2018 -0800
+
+    add html pages with base content
+
+commit fb1d8b0f1c403fa592e2d6db03db8f5251afbd23
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Mar 5 14:10:56 2018 -0800
+
+    fix container size, add nav link pseudo classes
+
+commit 11b2c64dc87619b312ec443074e0a30ba3452db4
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Mar 5 14:00:01 2018 -0800
+
+    fix footer opacity
+
+commit 1496c1b9d63b82f959b5e76e8594c07a5435013c
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Mar 5 13:58:32 2018 -0800
+
+    add footer content and styles
+
+commit 66b40da1d3963fffc68d78f24d06cb4ae2783d51
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Mar 5 13:32:58 2018 -0800
+
+    add logo, fix container styles
+
+commit 27cdf75718a156c08f0a3a3f787f4c4e7a87b1fd
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Mar 5 13:14:43 2018 -0800
+
+    add menu links, add bg dimmer
+
+commit b93969670a645dcb772684c897dfd0df1ff7a918
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Mar 5 13:06:45 2018 -0800
+
+    add jquery libraries, add nav content and styles
+
+commit e495070c031f156784cfbbb2444e7792ca32d5dd
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Sat Mar 3 23:09:36 2018 -0800
+
+    add sass file
+
+commit a663303ab8de333452cd2aa66d704933cf82df70
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Tue Feb 27 19:58:52 2018 -0800
+
+    recover original prototype, remove unnecessary files
+
+commit 1c3b90e2b33c16fe3bdc2e83afc8f39557c0f25c
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Feb 26 21:38:13 2018 -0800
+
+    fix prototype
+
+commit ced614efa5371fba1fec4d3cb35d4425f7deaae1
+Merge: ab90593 5b2577c
+Author: Joseph Sobrero <jsobrero@calpoly.edu>
+Date:   Mon Feb 26 14:48:19 2018 -0800
+
+    add homepage html and css
+
+commit ab90593e36a8b8bf91fd5db1aefbd88a035e4227
+Author: Joseph Sobrero <jsobrero@calpoly.edu>
+Date:   Mon Feb 26 12:15:00 2018 -0800
+
+    update prototype
+
+commit 5b2577c54552a60de6ba1c129687089815bc8e60
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Feb 26 11:41:33 2018 -0800
+
+    update xd prototype file
+
+commit e5d3442683c3eb0985c2d55a1cfc74b72549e348
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Mon Feb 26 11:40:27 2018 -0800
+
+    add prototype images, pdf, and illustrator file
+
+commit 0974f15afba21bbf75bbe2de5c19f30ea92fa8eb
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Sat Feb 24 21:16:55 2018 -0800
+
+    update prototype
+
+commit 88c80b2b18663cf894fb516650e5486449f38310
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Sat Feb 24 21:04:53 2018 -0800
+
+    fixed untracked files
+
+commit 07a0c27fbae7ab1d30b81790b5ddbdbfd5444071
+Author: Joseph Sobrero <joesobrero@gmail.com>
+Date:   Sat Feb 24 21:00:44 2018 -0800
+
+    modify .gitignore, add stock photos, add color theme, update prototype
+
+commit d9c5099375147cadf58b5b87a032e3a1b2311764
+Author: Joseph Sobrero <jsobrero@calpoly.edu>
+Date:   Tue Feb 20 14:32:58 2018 -0800
+
+    add .gitignore, add prototype file, add images for prototype
+
+commit c506afc1e846a995f9ac324fabdea68230d20d57
+Author: Joseph Sobrero <jsobrero@calpoly.edu>
+Date:   Tue Feb 20 14:16:23 2018 -0800
+
+    add image folder and logo
+
+commit e423e82f3a9f6b655b594e7ee903ebeab078ed1a
+Author: Joseph Sobrero <jsobrero@calpoly.edu>
+Date:   Tue Feb 20 13:33:21 2018 -0800
+
+    initialze repo, add basic html and css structure
