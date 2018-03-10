@@ -180,7 +180,38 @@ nav {
   overflow-x: hidden;
   overflow-y: scroll;
   margin-right: 14px;
-  padding-right: 28px; }
+  padding-right: 15px; }
+
+#scroll-button, #scroll-button-2 {
+  position: absolute;
+  z-index: 4;
+  top: 91vh;
+  right: 275px;
+  height: 20px;
+  width: 125px;
+  cursor: pointer; }
+  #scroll-button:hover, #scroll-button-2:hover {
+    opacity: 0.5; }
+  #scroll-button a p, #scroll-button-2 a p {
+    position: absolute;
+    line-height: 20px;
+    left: 0;
+    top: 0;
+    color: #aaa;
+    margin: 0; }
+  #scroll-button img, #scroll-button-2 img {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    height: 18px;
+    width: 18px;
+    opacity: 0.5; }
+
+#scroll-button-2 {
+  top: 107vh;
+  left: 275px; }
+  #scroll-button-2 img {
+    transform: rotate(180deg); }
 
 #map {
   position: absolute;

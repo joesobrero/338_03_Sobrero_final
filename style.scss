@@ -130,9 +130,8 @@ nav {
   }
 }
 
-// MANIN CONTENT
+// MAIN CONTENT (consistent on each page)
 
-// container no overflow
 .container {
   display: none;
   z-index: 0;
@@ -235,10 +234,47 @@ nav {
   overflow-x: hidden;
   overflow-y: scroll;
   margin-right: 14px;
-  padding-right: 28px;
+  padding-right: 15px;
+}
+#scroll-button, #scroll-button-2 {
+  position: absolute;
+  z-index: 4;
+  top: 91vh;
+  right: 275px;
+  height: 20px;
+  width: 125px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+  a p {
+    position: absolute;
+    line-height: 20px;
+    left: 0;
+    top: 0;
+    color: $gray;
+    margin: 0;
+  }
+  img {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    height: 18px;
+    width: 18px;
+    opacity: 0.5;
+  }
+}
+#scroll-button-2 {
+  top: 107vh;
+  left: 275px;
+  img {
+    transform: rotate(180deg);
+  }
 }
 
-// LOCATION
+
+// LOCATION PAGE
+
 #map {
   position: absolute;
   left: 0;
