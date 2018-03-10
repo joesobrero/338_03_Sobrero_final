@@ -39,11 +39,13 @@ $(document).ready(function() {
             story.animate({
                 scrollTop: story2.offset().top
             }, 850);
+            storyView = 2
         }
         else {
             story.animate({
                 scrollTop: story1.offset().top
             }, 850);
+            storyView = 1;
         }
     }
 
