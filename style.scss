@@ -15,7 +15,7 @@ $gray: #aaa;
 $red: #D81200;
 $blue: #022B3A;
 // opacity
-$textbgo: 0.8;
+$textbgo: 0.6;
 // text
 $fontfam: 'Open Sans', 'Lato', sans-serif;
 $fontsizes: 0.65em;
@@ -43,6 +43,48 @@ html, body {
 
 
 /* STYLES */
+
+// TEXT
+h1, h2, h3, p {
+  font-family: $fontfam;
+  text-align: left;
+  color: $white;
+}
+h1 {
+  font-size: 3em;
+  font-weight: $reg;
+  text-transform: uppercase;
+  margin: 100px 0 40px 50px;
+  letter-spacing: 3px;
+}
+h3 {
+  font-size: 1em;
+  font-weight: $bold;
+  letter-spacing: 2px;
+  margin: 0 0 20px 50px;
+}
+p {
+  font-size: 1em;
+  font-weight: $reg;
+  margin: 0 50px 30px 50px;
+  line-height: 1.15 em;
+  letter-spacing: 1px;
+}
+
+.text-box {
+  position: absolute;
+  z-index: 3;
+  width: 450px;
+  top: 0;
+  height: 100%;
+  bottom: 0;
+  a {
+    color: $white;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
 
 // NAV BAR
 nav {
@@ -87,23 +129,6 @@ nav {
 }
 
 // MANIN CONTENT
-// for page height to fix footer positioning
-
-#story-footer-div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 200vh;
-  width: 100%;
-  overflow: hidden;
-}
-#story-scroll {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
 
 // container no overflow
 .container {
@@ -122,6 +147,7 @@ nav {
   margin-top: 100vh;
   margin-bottom: 10vh;
 }
+
 // background image dimmer
 .dimmer {
   z-index: 1;
@@ -133,6 +159,7 @@ nav {
   background-color: $black;
   opacity: 0.65;
 }
+
 // background image
 .bg {
   z-index: 0;
@@ -142,6 +169,7 @@ nav {
   width: 100%;
   min-height: 100%;
 }
+
 // logo images
 #logo-box {
   z-index: 2;
@@ -164,6 +192,54 @@ nav {
   right: 0;
 }
 
+// image dimmers
+.page-dimmer {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 450px;
+  height: 100%;
+  opacity: $textbgo;
+}
+.red {
+  background-color: $red;
+}
+.blue {
+  background-color: $blue;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+
+
+// STORY PAGE
+#story-footer-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200vh;
+  width: 100%;
+  overflow: hidden;
+}
+#story-scroll {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+// LOCATION
+#map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 
 // FOOTER
 
@@ -182,7 +258,7 @@ footer {
     left: 0;
     bottom: 0;
     height: 100%;
-    width: 50%;
+    width: 75%;
     list-style-type: none;
     li {
       font-family: $fontfam;
@@ -206,4 +282,38 @@ footer {
   #v {
     right: 50px;
   }
+}
+
+
+// RIGHT SIDE LOGO
+
+#logo-right {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 50px;
+    left: 0;
+    opacity: 0.25;
+  }
+  div {
+    position: absolute;
+    height: 35%;
+    width: 3px;
+    right: 21px;
+    background-color: rgba(0, 0, 0, 0.25);
+    //background-color: $blue;
+  }
+}
+#top-line {
+  top: 10%;
+}
+#bot-line {
+  top: 55%;
 }

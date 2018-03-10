@@ -11,7 +11,5 @@ $document.ready(function() {
 
     // functions
 
-
     // events
-
 });
