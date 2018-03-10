@@ -12,38 +12,20 @@ $(document).ready(function() {
     var story = $('#story-scroll');
     var story1 = $('#container1');
     var story2 = $('#container2');
-    var scrollTrig = $('#scroll-trig');
-    var storyTop = $('#topofpage');
     // event vars
-    var storyView = 1;
+    var storyView = 0;
 
 
     // functions
     function storyScroll() {
-        lines.animate({
-            backgroundColor: red
-        }).delay(800).animate({
-            backgroundColor: black
-        });
-        /*
-        if(storyView == 1) {
-            document.getElementById('container2').scrollIntoView(1000);
-            storyView = 2;
-        }
-        else {
-            document.getElementById('container1').scrollIntoView(1000);
-            storyView = 1;
-        }
-        */
-        if(storyView == 1) {
+        if(storyView == 0) {
+            lines.animate({
+                backgroundColor: red
+            }).delay(800).animate({
+                backgroundColor: black
+            });
             story.animate({
                 scrollTop: story2.offset().top
-            }, 850);
-            storyView = 2
-        }
-        else {
-            story.animate({
-                scrollTop: story1.offset().top
             }, 850);
             storyView = 1;
         }
@@ -51,7 +33,7 @@ $(document).ready(function() {
 
     // events
     content.fadeIn(800);
-    scrollTrig.scroll(function() {
+    story.scroll(function() {
         storyScroll();
     });
 });
