@@ -98,7 +98,6 @@ nav {
   top: 0;
   height: 100vh;
   width: 275px;
-  background-color: rgba(255, 255, 255, 0.8);
   ul {
     position: absolute;
     top: 50%;
@@ -294,6 +293,13 @@ footer {
   }
 }
 
+
+// HOME PAGE
+
+body#home {
+  background: url(images/grey.png);
+}
+
 // STORY PAGE
 
 #story-footer-div {
@@ -348,7 +354,15 @@ footer {
     transform: rotate(180deg);
   }
 }
+body#story {
+  background: url(images/greyzz.png);
+}
 
+// EVENTS PAGE
+
+body#events {
+  background: url(images/concrete-texture.png);
+}
 
 // LOCATION PAGE
 
@@ -358,6 +372,9 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
+}
+body#location {
+  background: url(images/topography.png);
 }
 
 
@@ -389,6 +406,7 @@ footer {
     }
   }
 }
+
 h1#menu-title {
   z-index: 3;
   position: absolute;
@@ -397,4 +415,7 @@ h1#menu-title {
   left: 25px;
   margin: 0;
   line-height: 70px;
+}
+body#menu {
+  background: url(images/subtle_grunge.png);
 }

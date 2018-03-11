@@ -61,8 +61,7 @@ nav {
   left: 0;
   top: 0;
   height: 100vh;
-  width: 275px;
-  background-color: rgba(255, 255, 255, 0.8); }
+  width: 275px; }
   nav ul {
     position: absolute;
     top: 50%;
@@ -227,6 +226,9 @@ footer {
   footer #v {
     right: 50px; }
 
+body#home {
+  background: url(images/grey.png); }
+
 #story-footer-div {
   position: absolute;
   top: 0;
@@ -275,12 +277,21 @@ footer {
   #scroll-button-2 img {
     transform: rotate(180deg); }
 
+body#story {
+  background: url(images/greyzz.png); }
+
+body#events {
+  background: url(images/concrete-texture.png); }
+
 #map {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%; }
+
+body#location {
+  background: url(images/topography.png); }
 
 #menu-nav {
   position: fixed;
@@ -312,5 +323,8 @@ h1#menu-title {
   left: 25px;
   margin: 0;
   line-height: 70px; }
+
+body#menu {
+  background: url(images/subtle_grunge.png); }
 
 /*# sourceMappingURL=style.css.map */
