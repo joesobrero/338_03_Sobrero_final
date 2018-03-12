@@ -122,7 +122,7 @@ nav {
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 0.65; }
+  opacity: 0.35; }
 
 .bg {
   z-index: 0;
@@ -285,10 +285,10 @@ body#home {
     transform: rotate(180deg); }
 
 body#story {
-  background: url(images/greyzz.png); }
+  background: url(images/grey.png); }
 
 body#events {
-  background: url(images/concrete-texture.png); }
+  background: url(images/grey.png); }
 
 #map {
   position: absolute;
@@ -301,7 +301,7 @@ body#location {
   background: url(images/topography.png); }
 
 body#menu {
-  background: url(images/subtle_grunge.png); }
+  background: url(images/grey.png); }
 
 #menu-nav {
   position: fixed;
@@ -337,47 +337,64 @@ h1#menu-title {
 #menu-section-container {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 70px;
   width: 100%;
   height: 100%;
   overflow-y: scroll; }
 
 .menu-section {
   position: relative;
-  width: 100%;
-  height: 100%;
-  padding-top: 90px; }
+  float: left;
+  width: 600px;
+  height: auto;
+  padding: 0 0 20px 0;
+  margin: 45px 35px 35px 35px;
+  border-bottom: 1px solid #D81200; }
   .menu-section h1 {
     position: relative;
     color: #022B3A;
     opacity: 0.6;
-    margin: 0 0 30px 25px; }
-    .menu-section h1 .sub-desc {
-      font-size: 0.25em; }
+    margin: 0 0 0 0;
+    font-size: 2.2em; }
   .menu-section h2 {
+    margin-left: 0;
     color: #D81200; }
-    .menu-section h2 .sub-desc {
-      font-size: 0.4em; }
-  .menu-section .sub-desc {
+  .menu-section h3 {
+    position: relative;
+    color: #aaa;
+    margin: 0 0 35px 0;
+    font-size: 0.85em;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 400; }
+  .menu-section span {
+    font-size: 0.5em;
     font-style: italic;
     margin-left: 15px;
     text-transform: lowercase; }
+    .menu-section span .sub-desc {
+      font-size: 0.85em;
+      margin-left: 0; }
+  .menu-section p {
+    font-size: 0.85em; }
 
 .menu-item {
   position: relative;
   float: left;
   width: 550px;
-  height: 150px; }
-  .menu-item h2, .menu-item p {
-    color: #000; }
+  height: auto; }
+  .menu-item h2 {
+    color: #000;
+    margin: 0 0 10px 0; }
   .menu-item p {
-    margin-left: 25px; }
+    color: #000;
+    margin: 0 0 6px 0; }
   .menu-item span {
     font-size: 0.5em;
     margin-left: 10px;
     font-weight: 400; }
-  .menu-item .description {
-    margin-bottom: 5px; }
+  .menu-item p:last-child {
+    margin-bottom: 30px; }
   .menu-item .addon {
     color: #aaa; }
 

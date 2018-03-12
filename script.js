@@ -7,6 +7,7 @@ $(document).ready(function() {
     var red = '#D81200';
     var blue = '#022B3A';
     // selectors
+    //     story
     var content = $('.container');
     var lines = $('#top-line,#bot-line');
     var story = $('#story-scroll');
@@ -14,11 +15,25 @@ $(document).ready(function() {
     var scrollButton2 = $('#scroll-button-2');
     var story1 = $('#container1');
     var story2 = $('#container2');
+    //      menu
+    var menuScroll = $('#menu-section-container');
+    var appB = $('#app');
+    var app = $('#menu-sect-0');
+    var soupB = $('#soup');
+    var soup = $('#menu-sect-1');
+    var sandB = $('#sand');
+    var sand = $('#menu-sect-2');
+    var pastaB = $('#pasta');
+    var pasta = $('#menu-sect-3');
+    var pizzaB = $('#pizza');
+    var pizza = $('#menu-sect-4');
+
     // event vars
     var storyView = 0;
 
 
     // functions
+    //      story
     function storyScroll() {
         if(storyView == 0) {
             lines.animate({
@@ -53,9 +68,49 @@ $(document).ready(function() {
             scrollTop: story1.offset().top
         }, 850);
     }
+    //      menu
+    function showApp() {
+        var desiredHeight = $(window).height() / 10 + 105;
+        menuScroll.animate({
+            scrollTop: app.offset().top - desiredHeight
+        }, 0);
+    }
+    function showSoup() {
+        var desiredHeight = $(window).height() / 10 + 105;
+        menuScroll.animate({
+            scrollTop: app.offset().top - desiredHeight
+        }, 0).animate({
+            scrollTop: soup.offset().top - desiredHeight
+        }, 0);
+    }
+    function showSand() {
+        var desiredHeight = $(window).height() / 10 + 105;
+        menuScroll.animate({
+            scrollTop: app.offset().top - desiredHeight
+        }, 0).animate({
+            scrollTop: sand.offset().top - desiredHeight
+        }, 0);
+    }
+    function showPasta() {
+        var desiredHeight = $(window).height() / 10 + 105;
+        menuScroll.animate({
+            scrollTop: app.offset().top - desiredHeight
+        }, 0).animate({
+            scrollTop: pasta.offset().top - desiredHeight
+        }, 0);
+    }
+    function showPizza() {
+        var desiredHeight = $(window).height() / 10 + 105;
+        menuScroll.animate({
+            scrollTop: app.offset().top - desiredHeight
+        }, 0).animate({
+            scrollTop: pizza.offset().top - desiredHeight
+        }, 0);
+    }
 
     // events
     content.fadeIn(800);
+    //      story
     story.scroll(function() {
         storyScroll();
     });
@@ -64,5 +119,21 @@ $(document).ready(function() {
     });
     scrollButton2.click(function() {
         storyScrollC();
+    });
+    //      menu
+    appB.click(function() {
+        showApp();
+    });
+    soupB.click(function() {
+        showSoup();
+    });
+    sandB.click(function() {
+        showSand();
+    });
+    pastaB.click(function() {
+        showPasta();
+    });
+    pizzaB.click(function() {
+        showPizza();
     })
 });

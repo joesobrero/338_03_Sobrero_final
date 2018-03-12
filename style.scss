@@ -169,7 +169,7 @@ nav {
   width: 100%;
   height: 100%;
   background-color: $black;
-  opacity: 0.65;
+  opacity: 0.35;
 }
 
 // background image
@@ -362,13 +362,13 @@ body#home {
   }
 }
 body#story {
-  background: url(images/greyzz.png);
+  background: url(images/grey.png);
 }
 
 // EVENTS PAGE
 
 body#events {
-  background: url(images/concrete-texture.png);
+  background: url(images/grey.png);
 }
 
 // LOCATION PAGE
@@ -389,7 +389,7 @@ body#location {
 
 // page background
 body#menu {
-  background: url(images/subtle_grunge.png);
+  background: url(images/grey.png);
 }
 // top bar
 #menu-nav {
@@ -431,7 +431,7 @@ h1#menu-title {
 #menu-section-container {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 70px;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
@@ -439,48 +439,66 @@ h1#menu-title {
 // menu sections
 .menu-section {
   position: relative;
-  width: 100%;
-  height: 100%;
-  padding-top: 90px;
+  float: left;
+  width: 600px;
+  height: auto;
+  padding: 0 0 20px 0;
+  margin: 45px 35px 35px 35px;
+  border-bottom: 1px solid $red;
   h1 {
     position: relative;
     color: $blue;
     opacity: 0.6;
-    margin: 0 0 30px 25px;
-    .sub-desc {
-      font-size: 0.25em;
-    }
+    margin: 0 0 0 0;
+    font-size: 2.2em;
   }
   h2 {
+    margin-left: 0;
     color: $red;
-    .sub-desc {
-      font-size: 0.4em;
-    }
   }
-  .sub-desc {
+  h3 {
+    position: relative;
+    color: $gray;
+    margin: 0 0 35px 0;
+    font-size: 0.85em;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: $reg;
+  }
+  span {
+    font-size: 0.5em;
     font-style: italic;
     margin-left: 15px;
     text-transform: lowercase;
+    .sub-desc {
+      font-size: 0.85em;
+      margin-left: 0;
+    }
+  }
+  p {
+    font-size: 0.85em;
   }
 }
 .menu-item {
   position: relative;
   float: left;
   width: 550px;
-  height: 150px;
-  h2, p {
+  height: auto;
+  h2 {
     color: $black;
+    margin: 0 0 10px 0;
   }
   p {
-    margin-left: 25px;
+    color: $black;
+    margin: 0 0 6px 0;
   }
   span {
     font-size: 0.5em;
     margin-left: 10px;
     font-weight: $reg;
   }
-  .description {
-    margin-bottom: 5px;
+  p:last-child {
+    margin-bottom: 30px;
   }
   .addon {
     color: $gray;
