@@ -14,6 +14,7 @@ $white: #fff;
 $gray: #aaa;
 $red: #D81200;
 $blue: #022B3A;
+$yellow: #F5E600;
 // opacity
 $textbgo: 0.6;
 // text
@@ -94,7 +95,6 @@ p {
     }
   }
 }
-
 
 // NAV BAR
 
@@ -267,8 +267,8 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.85);
+  height: 40px;
+  opacity: 0.6;
   // footer text items
   ul {
     position: absolute;
@@ -281,7 +281,7 @@ footer {
       font-family: $fontfam;
       font-size: $fontsizes;
       font-weight: $reg;
-      line-height: 30px;
+      line-height: 40px;
       letter-spacing: 1px;
       margin: 0 25px;
       color: $white;
@@ -294,7 +294,7 @@ footer {
     right: 15px;
     height: 20px;
     width: 20px;
-    bottom: 5px;
+    bottom: 10px;
   }
   #v {
     right: 50px;
