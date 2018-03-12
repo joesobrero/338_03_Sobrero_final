@@ -68,7 +68,7 @@ nav {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  height: 250px;
+  height: 350px;
   width: 275px; }
   nav ul {
     position: absolute;
@@ -76,7 +76,7 @@ nav {
     left: 50px;
     transform: translateY(-50%);
     width: 200px;
-    height: 280px;
+    height: 100%;
     list-style-type: none; }
     nav ul li {
       font-family: "Open Sans", "Lato", sans-serif;
