@@ -102,8 +102,9 @@ nav {
   z-index: 10;
   position: fixed;
   left: 0;
-  top: 0;
-  height: 100vh;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 250px;
   width: 275px;
   ul {
     position: absolute;
