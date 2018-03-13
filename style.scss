@@ -36,6 +36,7 @@ $bold: 700;
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 690px) {
   nav {
     display: none;
@@ -50,7 +51,7 @@ $bold: 700;
     left: 0;
     right: 0;
     height: 100%;
-    min-width: auto;
+    min-width: unset;
   }
   div#mobile-nav-button {
     display: block;
@@ -63,13 +64,56 @@ $bold: 700;
   position: fixed;
   left: 15px;
   top: 15px;
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
   div {
-    height: 5px;
+    height: 4px;
     width: 100%;
     background-color: #fff;
-    margin: 0 0 7px 0;
+    margin: 0 0 8px 0;
+  }
+}
+
+#mobile-nav {
+  display: none;
+  z-index: 11;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(2, 43, 58, 0.9);
+  ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    list-style-type: none;
+    li {
+      position: relative;
+      float: left;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      text-align: left;
+      font-family: $fontfam;
+      font-size: $fontsizem;
+      font-weight: $reg;
+      letter-spacing: 2px;
+      color: $gray;
+      a {
+        color: $white;
+        &:hover {
+          opacity: 0.5;
+        }
+        &:active {
+          color: $gray;
+        }
+      }
+    }
   }
 }
 
@@ -82,6 +126,7 @@ $bold: 700;
   color: #000;
   text-decoration: none;
 }
+
 html, body {
   overflow: hidden;
   width: 100%;
@@ -103,6 +148,7 @@ h1, h2, h3, p, a {
   text-align: left;
   color: $white;
 }
+
 h1 {
   font-size: 3em;
   font-weight: $reg;
@@ -110,6 +156,7 @@ h1 {
   margin: 50px 0 40px 50px;
   letter-spacing: 3px;
 }
+
 h2 {
   font-size: 1.8em;
   font-weight: $reg;
@@ -117,6 +164,7 @@ h2 {
   margin: 0 0 20px 25px;
   letter-spacing: 3px;
 }
+
 h3 {
   font-family: $fontfam2;
   font-size: 1em;
@@ -124,6 +172,7 @@ h3 {
   letter-spacing: 1px;
   margin: 0 0 15px 50px;
 }
+
 p {
   font-size: 1em;
   font-weight: $reg;
@@ -135,6 +184,7 @@ p {
 .red-text {
   color: $red;
 }
+
 .blue-text {
   color: $blue;
 }
@@ -217,6 +267,7 @@ nav {
   max-height: 1350px;
   overflow: hidden;
 }
+
 #container2 {
   margin-top: 100vh;
   margin-bottom: 10vh;
@@ -233,6 +284,7 @@ nav {
   background-color: $black;
   opacity: 0.35;
 }
+
 .page-dimmer {
   z-index: 1;
   position: absolute;

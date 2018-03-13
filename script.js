@@ -27,6 +27,9 @@ $(document).ready(function() {
     var pasta = $('#menu-sect-3');
     var pizzaB = $('#pizza');
     var pizza = $('#menu-sect-4');
+    //      mobile menu
+    var mobileNavB = $('#mobile-nav-button');
+    var mobileNav = $('#mobile-nav');
 
     // event vars
     var storyView = 0;
@@ -107,6 +110,13 @@ $(document).ready(function() {
             scrollTop: pizza.offset().top - desiredHeight
         }, 0);
     }
+    //      mobile menu
+    function showMobileNav() {
+        mobileNav.fadeIn(850);
+    }
+    function hideMobileNav() {
+        mobileNav.fadeOut(425);
+    }
 
     // events
     content.fadeIn(800);
@@ -135,5 +145,13 @@ $(document).ready(function() {
     });
     pizzaB.click(function() {
         showPizza();
-    })
+    });
+    //      mobile menu
+    mobileNavB.click(function() {
+        showMobileNav();
+    });
+    mobileNav.click(function() {
+        hideMobileNav();
+    });
+
 });
