@@ -18,6 +18,9 @@ html, body {
   width: 100%; }
 
 /* MY STYLES */
+body {
+  background: url(images/grey.png); }
+
 h1, h2, h3, p, a {
   font-family: "Open Sans", "Lato", sans-serif;
   text-align: left;
@@ -41,14 +44,20 @@ h3 {
   font-size: 1em;
   font-weight: 700;
   letter-spacing: 2px;
-  margin: 0 0 20px 50px; }
+  margin: 0 0 15px 50px; }
 
 p {
   font-size: 1em;
   font-weight: 400;
-  margin: 0 50px 30px 50px;
+  margin: 0 50px 35px 50px;
   line-height: 1.15em;
   letter-spacing: 1px; }
+
+.red-text {
+  color: #D81200; }
+
+.blue-text {
+  color: #022B3A; }
 
 .text-box {
   position: absolute;
@@ -159,7 +168,7 @@ nav {
   top: 0;
   width: 450px;
   height: 100%;
-  opacity: 0.6; }
+  opacity: 0.7; }
 
 .red {
   background-color: #D81200; }
@@ -218,7 +227,7 @@ footer {
     list-style-type: none; }
     footer ul li {
       font-family: "Open Sans", "Lato", sans-serif;
-      font-size: 0.65em;
+      font-size: 0.75em;
       font-weight: 400;
       line-height: 40px;
       letter-spacing: 1px;
@@ -233,9 +242,6 @@ footer {
     bottom: 10px; }
   footer #v {
     right: 50px; }
-
-body#home {
-  background: url(images/grey.png); }
 
 #story-footer-div {
   position: absolute;
@@ -269,15 +275,14 @@ body#home {
     line-height: 20px;
     left: 0;
     top: 0;
-    color: #aaa;
-    margin: 0; }
+    margin: 0;
+    color: #D81200; }
   #scroll-button img, #scroll-button-2 img {
     position: absolute;
     right: 0;
     top: 1px;
     height: 18px;
-    width: 18px;
-    opacity: 0.5; }
+    width: 18px; }
 
 #scroll-button-2 {
   top: 107vh;
@@ -285,24 +290,12 @@ body#home {
   #scroll-button-2 img {
     transform: rotate(180deg); }
 
-body#story {
-  background: url(images/grey.png); }
-
-body#events {
-  background: url(images/grey.png); }
-
 #map {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%; }
-
-body#location {
-  background: url(images/topography.png); }
-
-body#menu {
-  background: url(images/grey.png); }
 
 #menu-nav {
   position: fixed;
