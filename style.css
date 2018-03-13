@@ -5,6 +5,13 @@ Date: March 3, 2018
 GrC 338 Final Lab Project
  */
 /* VARIABLES */
+/* MOBILE */
+@media only screen and (max-width: 1500px) {
+  .container div.page-dimmer {
+    width: 100%; }
+
+  .container div.text-box {
+    width: 100%; } }
 /* RESET */
 * {
   vertical-align: baseline;
@@ -140,6 +147,29 @@ nav {
   background-color: #000;
   opacity: 0.35; }
 
+.page-dimmer {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 450px;
+  height: 100%;
+  opacity: 0.7; }
+
+.red {
+  background-color: #D81200; }
+
+.blue {
+  background-color: #022B3A; }
+
+.gray {
+  background-color: #aaa; }
+
+.left {
+  left: 0; }
+
+.right {
+  right: 0; }
+
 .bg {
   z-index: 0;
   position: absolute;
@@ -168,29 +198,6 @@ nav {
   left: 0; }
 
 #title-logotype {
-  right: 0; }
-
-.page-dimmer {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  width: 450px;
-  height: 100%;
-  opacity: 0.7; }
-
-.red {
-  background-color: #D81200; }
-
-.blue {
-  background-color: #022B3A; }
-
-.gray {
-  background-color: #aaa; }
-
-.left {
-  left: 0; }
-
-.right {
   right: 0; }
 
 #logo-right {

@@ -27,6 +27,15 @@ $reg: 400;
 $bold: 700;
 
 
+/* MOBILE */
+@media only screen and (max-width: 1500px) {
+  .container div.page-dimmer {
+    width: 100%;
+  }
+  .container div.text-box {
+    width: 100%;
+  }
+}
 
 /* RESET */
 
@@ -44,7 +53,6 @@ html, body {
   max-width: 2000px;
   min-width: 960px;
 }
-
 
 /* MY STYLES */
 
@@ -178,7 +186,7 @@ nav {
   margin-bottom: 10vh;
 }
 
-// background image dimmer
+// background image dimmers
 .dimmer {
   z-index: 1;
   position: absolute;
@@ -188,6 +196,29 @@ nav {
   height: 100%;
   background-color: $black;
   opacity: 0.35;
+}
+.page-dimmer {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 450px;
+  height: 100%;
+  opacity: $textbgo;
+}
+.red {
+  background-color: $red;
+}
+.blue {
+  background-color: $blue;
+}
+.gray {
+  background-color: $gray;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
 }
 
 // background image
@@ -224,30 +255,6 @@ nav {
   right: 0;
 }
 
-// image dimmers
-.page-dimmer {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  width: 450px;
-  height: 100%;
-  opacity: $textbgo;
-}
-.red {
-  background-color: $red;
-}
-.blue {
-  background-color: $blue;
-}
-.gray {
-  background-color: $gray;
-}
-.left {
-  left: 0;
-}
-.right {
-  right: 0;
-}
 
 // right side logo
 #logo-right {
