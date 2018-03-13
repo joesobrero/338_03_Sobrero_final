@@ -26,10 +26,35 @@ GrC 338 Final Lab Project
     left: 0;
     right: 0;
     height: 100%;
+    width: 100vw;
     min-width: unset; }
+    body div.container h1 {
+      font-size: 2.8em;
+      margin: 55px 0 15px 30px; }
+    body div.container h2 {
+      font-size: 1.5em; }
+    body div.container h3 {
+      font-size: 1.5em;
+      margin-bottom: 5px; }
+    body div.container p {
+      font-size: 0.8em; }
+    body div.container h1, body div.container h2, body div.container h3, body div.container p {
+      margin-left: 15px; }
+    body div.container#container2 {
+      margin-bottom: 0; }
 
   div#mobile-nav-button {
-    display: block; } }
+    display: block; }
+
+  div#scroll-button-1, div#scroll-button-2 {
+    display: none; }
+
+  div#story-footer-div {
+    z-index: 1;
+    width: 100vw; }
+
+  body footer {
+    opacity: 1; } }
 #mobile-nav-button {
   display: none;
   z-index: 10;
@@ -149,8 +174,6 @@ p {
     color: #fff; }
     .text-box a:hover {
       opacity: 0.5; }
-  .text-box p:last-child {
-    margin-bottom: 50px; }
 
 nav {
   z-index: 10;

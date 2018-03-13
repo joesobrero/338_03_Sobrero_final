@@ -51,10 +51,41 @@ $bold: 700;
     left: 0;
     right: 0;
     height: 100%;
+    width: 100vw;
     min-width: unset;
+    h1 {
+      font-size: 2.8em;
+      margin: 55px 0 15px 30px;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 0.8em;
+    }
+    h1, h2, h3, p {
+      margin-left: 15px;
+    }
+    &#container2 {
+      margin-bottom: 0;
+    }
   }
   div#mobile-nav-button {
     display: block;
+  }
+  div#scroll-button-1, div#scroll-button-2 {
+    display: none;
+  }
+  div#story-footer-div {
+    z-index: 1;
+    width: 100vw;
+  }
+  body footer {
+    opacity: 1;
   }
 }
 
@@ -200,9 +231,6 @@ p {
     &:hover {
       opacity: 0.5;
     }
-  }
-  p:last-child {
-    margin-bottom: 50px;
   }
 }
 
