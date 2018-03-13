@@ -34,11 +34,15 @@ GrC 338 Final Lab Project
   display: none;
   z-index: 10;
   position: fixed;
-  left: 5px;
-  top: 5px;
-  height: 50px;
-  width: 50px;
-  background-color: #fff; }
+  left: 15px;
+  top: 15px;
+  height: 35px;
+  width: 35px; }
+  #mobile-nav-button div {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 0 7px 0; }
 
 /* RESET */
 * {
