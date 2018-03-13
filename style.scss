@@ -154,7 +154,7 @@ nav {
 
 .container {
   display: none;
-  z-index: 0;
+  z-index: 1;
   position: absolute;
   left: 275px;
   right: 275px;
@@ -228,6 +228,9 @@ nav {
 }
 .blue {
   background-color: $blue;
+}
+.gray {
+  background-color: $gray;
 }
 .left {
   left: 0;
@@ -313,6 +316,7 @@ footer {
 // STORY PAGE
 
 #story-footer-div {
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
