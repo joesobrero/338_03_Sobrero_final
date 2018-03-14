@@ -8,11 +8,27 @@ GrC 338 Final Lab Project
 /* MOBILE */
 @media only screen and (max-width: 1500px) {
   .container div.page-dimmer {
-    width: 100%; }
+    display: none; }
 
   .container div.text-box {
-    width: 100%; } }
-@media only screen and (max-width: 690px) {
+    width: 100%; }
+
+  div#container2 div.text-box, #events div.text-box {
+    background-color: rgba(2, 43, 58, 0.6);
+    top: unset;
+    bottom: 0; }
+
+  div#container1 div.text-box {
+    background-color: rgba(216, 18, 0, 0.6); }
+
+  #location div.text-box {
+    background-color: rgba(216, 18, 0, 0.6);
+    top: unset;
+    bottom: 0; }
+
+  div.container p:last-child {
+    margin-bottom: 55px; } }
+@media only screen and (max-width: 900px) {
   nav {
     display: none; }
 
@@ -32,14 +48,14 @@ GrC 338 Final Lab Project
       font-size: 2.8em;
       margin: 55px 0 15px 30px; }
     body div.container h2 {
-      font-size: 1.5em; }
+      font-size: 1em; }
     body div.container h3 {
-      font-size: 1.5em;
+      font-size: 1em;
       margin-bottom: 5px; }
     body div.container p {
       font-size: 0.8em; }
     body div.container h1, body div.container h2, body div.container h3, body div.container p {
-      margin-left: 15px; }
+      margin-left: 35px; }
     body div.container#container2 {
       margin-bottom: 0; }
 
