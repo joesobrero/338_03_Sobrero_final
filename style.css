@@ -7,14 +7,8 @@ GrC 338 Final Lab Project
 /* VARIABLES */
 /* MOBILE */
 @media only screen and (max-width: 1500px) {
-  ul#menu-nav li {
+  ul#menu-nav li, .container div.page-dimmer {
     display: none; }
-
-  .container div.page-dimmer {
-    display: none; }
-
-  .container div.text-box {
-    width: 100%; }
 
   div#container2 div.text-box, #events div.text-box {
     background-color: rgba(2, 43, 58, 0.6);
@@ -29,20 +23,55 @@ GrC 338 Final Lab Project
     top: unset;
     bottom: 0; }
 
+  .container div.text-box {
+    width: 100%; }
+
   div.container p:last-child {
     margin-bottom: 55px; } }
 @media only screen and (max-width: 900px) {
-  nav {
+  nav, #logo-right, div#scroll-button, div#scroll-button-2 {
     display: none; }
+
+  body footer {
+    opacity: 1; }
+
+  div#mobile-nav-button {
+    display: block; }
+
+  div#story-footer-div {
+    z-index: 1;
+    width: 100vw; }
 
   #menu div#mobile-nav-button div, #location div#mobile-nav-button div {
     background-color: #000; }
 
-  #logo-right {
-    display: none; }
-
   div#logo-box {
     width: 90%; }
+
+  body#menu div.menu-section h1 {
+    font-size: 2em;
+    margin-top: 35px; }
+
+  div.menu-item {
+    height: 100px; }
+
+  ul#menu-nav {
+    position: absolute; }
+
+  body#menu div.container {
+    left: 5vw;
+    top: 10vh;
+    width: 90vw;
+    height: 80vh;
+    transform: unset; }
+
+  div#container2 div.text-box, #events div.text-box, div#container1 div.text-box, #location div.text-box {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: unset; }
+
+  div.menu-section {
+    margin: 0; }
 
   body div.container {
     left: 0;
@@ -63,34 +92,7 @@ GrC 338 Final Lab Project
     body div.container h1, body div.container h2, body div.container h3, body div.container p {
       margin-left: 35px; }
     body div.container#container2 {
-      margin-bottom: 0; }
-
-  body#menu div.container {
-    left: 5vw;
-    top: 10vh;
-    width: 90vw;
-    height: 80vh;
-    transform: unset; }
-
-  ul#menu-nav {
-    position: absolute; }
-
-  div#container2 div.text-box, #events div.text-box, div#container1 div.text-box, #location div.text-box {
-    top: 50%;
-    transform: translateY(-50%); }
-
-  div#mobile-nav-button {
-    display: block; }
-
-  div#scroll-button, div#scroll-button-2 {
-    display: none; }
-
-  div#story-footer-div {
-    z-index: 1;
-    width: 100vw; }
-
-  body footer {
-    opacity: 1; } }
+      margin-bottom: 0; } }
 #mobile-nav-button {
   display: none;
   z-index: 10;
