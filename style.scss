@@ -137,6 +137,9 @@ $bold: 700;
   height: 40px;
   width: 40px;
   cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
   div {
     height: 4px;
     width: 100%;
